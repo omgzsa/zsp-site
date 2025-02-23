@@ -26,7 +26,13 @@ export default defineNuxtConfig({
         },
     },
 
-    modules: ['@nuxt/ui-pro', '@nuxt/image', '@vueuse/nuxt', 'nuxt-time', 'nuxt-aos'],
+    modules: [
+        '@nuxt/ui-pro',
+        '@nuxt/image',
+        '@vueuse/nuxt',
+        'nuxt-time',
+        'nuxt-aos',
+    ],
 
     compatibilityDate: '2024-11-01',
 
@@ -80,7 +86,7 @@ export default defineNuxtConfig({
         ],
     },
 
-    // ui: {
-    //     fonts: true,
-    // },
+    uiPro: {
+        license: process.env.NUXT_UI_PRO_KEY,
+    },
 })
