@@ -48,9 +48,9 @@ const images = [
     content: '';
     position: absolute;
     left: -0.1em;
-    bottom: -0.25em;
+    bottom: -0.5em;
     width: 105%;
-    height: 0.3em;
+    height: 1em;
     mask-image: url('/line.svg');
     -webkit-mask-image: url('/line.svg');
     mask-repeat: no-repeat;
