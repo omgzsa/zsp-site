@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    future: {
+        compatibilityVersion: 4,
+    },
+
     app: {
         head: {
             title: 'ZSP',
@@ -17,47 +21,64 @@ export default defineNuxtConfig({
             ],
             link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
         },
+        rootAttrs: {
+            class: 'bg-(--ui-bg)',
+        },
     },
+
+    modules: ['@nuxt/ui-pro', '@nuxt/image', '@vueuse/nuxt', 'nuxt-time', 'nuxt-aos'],
 
     compatibilityDate: '2024-11-01',
 
     devtools: { enabled: true },
 
-    // css: ['~/assets/css/main.css'],
+    css: ['~/assets/css/main.css'],
 
-    // image: {
-    //     providers: {
-    //         local: {
-    //             provider: 'ipx',
-    //         },
-    //     },
-    // },
+    image: {
+        provider: 'ipx',
+    },
 
     // colorMode: {
     //     preference: 'light',
     //     fallback: 'light',
     // },
 
-    // fonts: {
-    //     families: [
-    //         {
-    //             name: 'Montserrat',
-    //             provider: 'google',
-    //             styles: ['normal', 'italic', 'oblique'],
-    //             weights: [
-    //                 '100',
-    //                 '200',
-    //                 '300',
-    //                 '400',
-    //                 '500',
-    //                 '600',
-    //                 '700',
-    //                 '800',
-    //                 '900',
-    //             ],
-    //         },
-    //     ],
-    // },
+    fonts: {
+        families: [
+            {
+                name: 'Public Sans',
+                provider: 'google',
+                styles: ['normal', 'italic', 'oblique'],
+                weights: [
+                    '100',
+                    '200',
+                    '300',
+                    '400',
+                    '500',
+                    '600',
+                    '700',
+                    '800',
+                    '900',
+                ],
+            },
+            {
+                name: 'Chivo Mono',
+                provider: 'google',
+                styles: ['normal', 'italic', 'oblique'],
+                weights: [
+                    '100',
+                    '200',
+                    '300',
+                    '400',
+                    '500',
+                    '600',
+                    '700',
+                    '800',
+                    '900',
+                ],
+            },
+        ],
+    },
 
     // ui: {
     //     fonts: true,
