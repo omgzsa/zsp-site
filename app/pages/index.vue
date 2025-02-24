@@ -26,7 +26,6 @@ const images = [
         >
             <NuxtImg
                 v-for="(image, index) in images"
-                provider="ipx"
                 :key="image.alt"
                 :src="image.src"
                 :alt="image.alt"

@@ -2,7 +2,7 @@ export default defineAppConfig({
     links: [
         { label: 'Home', to: '/' },
         { label: 'About', to: '/about-me' },
-        { label: 'Gallery', to: '/gallery' },
+        { label: 'Projects', to: '/projects' },
     ],
     contact: {
         // phone: '(+36) 99 999 396',
