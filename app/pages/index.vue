@@ -34,8 +34,6 @@ const images = [
                 :key="image.alt"
                 :src="image.src"
                 :alt="image.alt"
-                data-aos="fade-up"
-                :data-aos-delay="300 + index * 100"
                 class="w-full rounded-[var(--ui-radius)] shadow-md"
             />
         </section>
