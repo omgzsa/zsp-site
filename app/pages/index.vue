@@ -1,18 +1,23 @@
 <script setup lang="ts">
 const images = [
-    { src: '/img/best-of/1.jpg', alt: 'Image 1' },
+    { src: '/img/best-of/9.jpg', alt: 'Image 9' },
     { src: '/img/best-of/2.jpg', alt: 'Image 2' },
+    { src: '/img/best-of/10.jpg', alt: 'Image 10' },
     { src: '/img/best-of/3.jpg', alt: 'Image 3' },
     { src: '/img/best-of/4.jpg', alt: 'Image 4' },
+    { src: '/img/best-of/11.jpg', alt: 'Image 11' },
     { src: '/img/best-of/5.jpg', alt: 'Image 5' },
+    { src: '/img/best-of/1.jpg', alt: 'Image 1' },
+    { src: '/img/best-of/12.jpg', alt: 'Image 12' },
     { src: '/img/best-of/6.jpg', alt: 'Image 6' },
     { src: '/img/best-of/7.jpg', alt: 'Image 7' },
+    { src: '/img/best-of/14.jpg', alt: 'Image 14' },
     { src: '/img/best-of/8.jpg', alt: 'Image 8' },
 ]
 </script>
 
 <template>
-    <UContainer as="section" class="pb-10">
+    <UContainer as="section" class="">
         <h1
             class="font-serif text-left pt-12 pb-20 font-medium text-4xl md:text-6xl lg:text-8xl"
             data-aos="fade-up"
@@ -22,15 +27,13 @@ const images = [
         </h1>
 
         <section
-            class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 lg:gap-6 lg:space-y-6"
+            class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 lg:gap-6 lg:space-y-6 pb-12"
         >
             <NuxtImg
                 v-for="(image, index) in images"
                 :key="image.alt"
                 :src="image.src"
                 :alt="image.alt"
-                data-aos="fade-up"
-                :data-aos-delay="300 + index * 100"
                 class="w-full rounded-[var(--ui-radius)] shadow-md"
             />
         </section>
