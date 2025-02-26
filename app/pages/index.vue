@@ -1,18 +1,18 @@
 <script setup lang="ts">
 const images = [
-    { src: '/img/best-of/9.jpg', alt: 'Image 9' },
+    { src: '/img/best-of/1.jpg', alt: 'Image 1' },
     { src: '/img/best-of/2.jpg', alt: 'Image 2' },
-    { src: '/img/best-of/10.jpg', alt: 'Image 10' },
     { src: '/img/best-of/3.jpg', alt: 'Image 3' },
     { src: '/img/best-of/4.jpg', alt: 'Image 4' },
-    { src: '/img/best-of/11.jpg', alt: 'Image 11' },
     { src: '/img/best-of/5.jpg', alt: 'Image 5' },
-    { src: '/img/best-of/1.jpg', alt: 'Image 1' },
-    { src: '/img/best-of/12.jpg', alt: 'Image 12' },
     { src: '/img/best-of/6.jpg', alt: 'Image 6' },
     { src: '/img/best-of/7.jpg', alt: 'Image 7' },
-    { src: '/img/best-of/14.jpg', alt: 'Image 14' },
     { src: '/img/best-of/8.jpg', alt: 'Image 8' },
+    // { src: '/img/best-of/9.jpg', alt: 'Image 9' },
+    // { src: '/img/best-of/10.jpg', alt: 'Image 10' },
+    // { src: '/img/best-of/11.jpg', alt: 'Image 11' },
+    // { src: '/img/best-of/12.jpg', alt: 'Image 12' },
+    // { src: '/img/best-of/14.jpg', alt: 'Image 14' },
 ]
 </script>
 
